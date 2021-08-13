@@ -23,13 +23,22 @@ Deberá crear un fork del proyecto ([link](https://github.com/Kemok-Repos/larave
 
 ## Requerimientos
 
-*   Los usuarios se registran proporcionando únicamente su correo electrónico y contraseña.
-*   Cada usuario tiene un perfil en el que puede editar:
+*   Los usuarios se registran proporcionando un username, correo electrónico y contraseña.  
+    *   Validación de datos:
+        *   Únicos: username, correo electrónico
+        *   Sin espacios, ni caracteres especiales: username
+        *   Correo electrónico válido
+        *   Mínimo 8 caracteres: contraseña           
+*   Para iniciar sesión únicamente solicitar correo electrónico y contraseña.
+*   Cada usuario tiene un perfil en el que puede agregar/editar:
     *   Nombre completo
-    *   Fecha de nacimiento 
+    *   Fecha de nacimiento
     *   Nacionalidad
 *   La lista de países para la nacionalidad del usuario debe mostrarse en un tag select utilizando a discreción una librería de JS que permita la búsqueda del país. La búsqueda debe realizarse por ajax o axios (no cargar a la vista todos los países).
 *   Los usuarios pueden crear y ver posts en el feed.
+    *   Validación de datos:
+        *   Mínimo 1 caracter
+        *   Máximo 280 caracteres      
 *   Los usuarios únicamente pueden editar y/o eliminar posts creados por ellos mismos.
 *   En el feed los posts deben mostrarse ordenados por fecha y hora.
 *   Los comentarios son un recurso anidado de los posts y ambos pertenecer a un usuario. (ej: dominio.test/post/10/comentario/20)
