@@ -5,13 +5,13 @@ El proyecto consiste en desarrollar una red social básica. Podremos crear posts
 
 ## Inicializar proyecto
 
-*   Instalación de Homestead o Docker
+###   Instalación de Homestead o Docker
 
-    Se recomienda consultar la [documentación oficial de Laravel](https://laravel.com), también puede consultar otras fuentes.
+Se recomienda consultar la [documentación oficial de Laravel](https://laravel.com), también puede consultar otras fuentes.
 
-*   Clonar e instalar proyecto desde Github
+###   Clonar e instalar proyecto desde Github
 
-    Deberá crear un fork del proyecto ([link](https://github.com/Kemok-Repos/laravel-ejercicio)) a un repositorio personal que deberá configurar como público, seguido debe clonar el proyecto para luego instalar la aplicación. A partir de este momento se espera que utilice git para manejar el código del proyecto.
+Deberá crear un fork del proyecto ([link](https://github.com/Kemok-Repos/laravel-ejercicio)) a un repositorio personal que deberá configurar como público, seguido debe clonar el proyecto para luego instalar la aplicación. A partir de este momento se espera que utilice git para manejar el código del proyecto.
 
 
 ## Dependencias
@@ -31,19 +31,28 @@ El proyecto consiste en desarrollar una red social básica. Podremos crear posts
 *   La lista de países para la nacionalidad del usuario debe mostrarse en un tag select utilizando a discreción una librería de JS que permita la búsqueda del país. La búsqueda debe realizarse por ajax o axios (no cargar a la vista todos los países).
 *   Los usuarios pueden crear y ver posts en el feed.
 *   Los usuarios únicamente pueden editar y/o eliminar posts creados por ellos mismos.
-*   En el feed los post deben mostrarse ordenados por fecha y hora.
+*   En el feed los posts deben mostrarse ordenados por fecha y hora.
 *   Los comentarios son un recurso anidado de los posts y ambos pertenecer a un usuario. (ej: dominio.test/post/10/comentario/20)
 *   Crear un usuario super-admin (utilizando laravel-permission), este tiene permisos para realizar cualquier acción en posts o comentarios de cualquier usuario. Crear el rol y permisos pertinentes para cada acción del CRUD.
 *   Para cada modelo, crear su propio factory para llenar con datos dummies la base de datos utilizando seeders.
-*   Crear tests unitarios en phpunit. (trate de abarcar un 80% del código)
+*   Crear tests unitarios y de integración en phpunit.
+
+
+## Puntos a evaluar
+
+*   Cumplir todos los requerimientos
+*   Usar Git correctamente 
+*   Aplicar buenas prácticas de programación
+*   Uso de principios SOLID
+*   Elaborar correctamente los tests
+
 
 ## Suman puntos a tu favor
 
 *   Uso de estándares de programación PSR
-*   Manejo de variables de entorno
-*   Uso de principios SOLID
+*   Manejo de variables de entorno (si es necesario)
+*   Desarrollo guiado por pruebas
 *   Patrones de diseño
-*   Uso correcto de GIT
 *   Aplicación de algún workflow de Git
 *   Despliegue de aplicación en plataforma online
 
